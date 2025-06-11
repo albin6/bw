@@ -1,13 +1,8 @@
-import React, { useMemo, useState } from "react";
-import { useFormHandler } from "./hooks/useFormHandler";
+import React from "react";
+import A from "./components/A";
 
 function App() {
-  const { handleChange, name } = useFormHandler();
-  return (
-    <>
-      <input type="text" value={name} onChange={handleChange} />
-    </>
-  );
+  return <A />;
 }
 
 export default App;
